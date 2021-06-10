@@ -1,10 +1,7 @@
 <?php
-    $firstNumber = "Bilbo";
-    $secondNumber = "Baggins";
-    $age = 111;
     function result($firstNumber,$secondNumber,$age) : string 
     {
-        return "Bonjour .$firstNumber. .$secondNumber., tu as .$age. ans.";
+        return "Bonjour $firstNumber $secondNumber, tu as $age ans.";
     }?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,6 +13,6 @@
 </head>
 <body>
     <h1>Exercice 6 Partie 4 : Les fonctions PHP</h1>
-    <p>Bonjour <?=$firstNumber?> <?=$secondNumber?>, tu as <?=$age?> ans.</p>  
+    <p><?=result("Bilbo","Baggins",111);?></p>  
 </body>
 </html>
