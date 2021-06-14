@@ -1,7 +1,8 @@
 <?php
-    function result($firstNumber,$secondNumber,$age) : string 
+    declare(strict_types = 1);
+    function welcomeSentence(string $firstName, string $lastName, int $age) : string 
     {
-        return "Bonjour $firstNumber $secondNumber, tu as $age ans.";
+        return 'Bonjour ' . $firstName . ' ' . $lastName . ', tu as ' . $age . ' ans.';
     }?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,6 +14,6 @@
 </head>
 <body>
     <h1>Exercice 6 Partie 4 : Les fonctions PHP</h1>
-    <p><?=result("Bilbo","Baggins",111);?></p>  
+    <p><?=welcomeSentence('Bilbo','Baggins',111);?></p>  
 </body>
 </html>
